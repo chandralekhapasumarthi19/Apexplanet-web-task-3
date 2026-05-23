@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz & Jokes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Quiz & Joke App</h1>
+  </header>
+
+  <main>
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h2>Quick Quiz</h2>
+      <p>What does HTML stand for?</p>
+      <button onclick="checkAnswer(true)">HyperText Markup Language</button>
+      <button onclick="checkAnswer(false)">HighText Machine Language</button>
+      <p id="score">Score: 0</p>
+    </section>
+
+    <!-- API Section -->
+    <section id="api">
+      <h2>Random Joke</h2>
+      <p id="joke">Click the button to load a joke!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
